@@ -4,7 +4,7 @@
       name: 'Mat',
       parameters: [
         {
-          baseColor: '536 Lamp',
+          baseColor: null,
         },
         {
           baseColorTint: [
@@ -39,12 +39,5 @@
     recenter: 'root',
     scale: 0.010699,
   },
-  samplers: [
-    {
-      file: 'sampledata/c/536 Lamp.png',
-      name: '536 Lamp',
-      pipeline_name: '536 Lamp.png',
-    },
-  ],
   version: '0.54:1',
 }
