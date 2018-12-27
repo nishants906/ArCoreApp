@@ -38,14 +38,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         fragment.setOnTapArPlaneListener((HitResult hitResult, Plane plane, MotionEvent motionEvent)->{
-            Log.d("enter1","touch");
             if (plane.getType()!=Plane.Type.HORIZONTAL_UPWARD_FACING){
-                Log.d("enter1","touch123");
                 return;
             }
             Anchor anchor = hitResult.createAnchor();
             placeObject(fragment,anchor,selectedobject);
-            Log.d("enter1","touch1");
 
         });
 
@@ -60,8 +57,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView bed = new ImageView(this);
         bed.setImageResource(R.drawable.lamppo);
         bed.setContentDescription("lamp");
-        bed.setOnClickListener(view ->{selectedobject = Uri.parse("LampPost.sfb");
-            Log.d("enter1","enter12");});
+        bed.setOnClickListener(view ->{selectedobject = Uri.parse("LampPost.sfb"); });
         selection.addView(bed);
 
 
@@ -69,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     public void placeObject(ArFragment fragment, Anchor anchor, Uri model){
-        Log.d("enter1","done23");
 
         ModelRenderable.builder()
                 .setSource(fragment.getContext(),model)
@@ -89,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void addnodetoscene(ArFragment fragment, Anchor anchor,Renderable renderable){
 
-        Log.d("enter1","done");
         AnchorNode anchorNode = new AnchorNode(anchor);
         anchorNode.setParent(fragment.getArSceneView().getScene());
 
@@ -97,10 +91,6 @@ public class MainActivity extends AppCompatActivity {
         node.setParent(anchorNode);
         node.setRenderable(renderable);
         node.select();
-        Log.d("enter1","done3456");
-        Log.d("enter1", String.valueOf(node.getParent()));
-        Log.d("enter1", String.valueOf(anchorNode.getAnchor()));
-        Log.d("enter1", String.valueOf(anchor));
 
 
     }
