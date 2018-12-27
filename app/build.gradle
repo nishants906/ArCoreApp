@@ -38,3 +38,13 @@ sceneform.asset('sampledata/a/model.obj',
         'default',
         'sampledata/a/model.sfa',
         'src/main/assets/modela')
+
+sceneform.asset('sampledata/b/ModifiedBed02.obj',
+        'default',
+        'sampledata/b/ModifiedBed02.sfa',
+        'src/main/assets/bed')
+
+sceneform.asset('sampledata/c/536 Lamp.obj',
+        'default',
+        'sampledata/c/536 Lamp.sfa',
+        'src/main/assets/lamp')

@@ -1,0 +1,50 @@
+{
+  materials: [
+    {
+      name: 'Mat',
+      parameters: [
+        {
+          baseColor: '536 Lamp',
+        },
+        {
+          baseColorTint: [
+            0.59999999999999998,
+            0.59999999999999998,
+            0.59999999999999998,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/c/536 Lamp.obj',
+    name: '536 Lamp',
+    recenter: 'root',
+    scale: 0.010699,
+  },
+  samplers: [
+    {
+      file: 'sampledata/c/536 Lamp.png',
+      name: '536 Lamp',
+      pipeline_name: '536 Lamp.png',
+    },
+  ],
+  version: '0.54:1',
+}
