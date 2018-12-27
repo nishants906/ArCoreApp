@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
 
 android {
     compileSdkVersion 28
@@ -31,3 +32,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.0.0'
 }
+
+
+sceneform.asset('sampledata/a/model.obj',
+        'default',
+        'sampledata/a/model.sfa',
+        'src/main/assets/modela')
